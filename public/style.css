@@ -1,0 +1,101 @@
+@import url("./fonts/fonts.css");
+/* Globals */
+
+:root {
+  --asu-maroon: #8c1d40;
+  --asu-gold: #ffc627;
+  --lime-green: #78be30;
+  --light-blue: #00a3e0;
+  --orange: #ff7f32;
+  --dark-gray: #1d1d1d;
+  --light-gray: #454545;
+  --off-white: #ededed;
+
+  --dark-shadow: 0 7px 30px -10px var(--dark-gray);
+  --light-shadow: 0 7px 10px -10px var(--dark-gray);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "geomanistregular";
+  background-color: var(--dark-gray);
+  color: var(--off-white);
+}
+
+h1 {
+  font-size: 4eem;
+}
+h2 {
+  font-size: 1.5em;
+}
+
+.name-highlight {
+  font-family: "geomanistultra";
+  font-size: 2em;
+  color: white;
+}
+
+.container {
+  display: flex;
+  margin: 1rem;
+  flex-direction: column;
+}
+
+.card {
+  margin: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: space-between;
+  background-color: var(--light-gray);
+
+  color: var(--off-white);
+  padding: 1rem;
+  width: 240px;
+  min-height: 280px;
+  min-width: 100px;
+  transition: all 0.75s ease-out;
+  line-height: 0.9rem;
+  letter-spacing: 2px;
+}
+
+.card:hover {
+  transform: translateY(-20px);
+}
+
+.projects-section {
+  margin: 15rem 5rem;
+}
+
+.projects-section > h2 {
+  margin-right: 0.5rem;
+  font-family: "geomanistultra";
+  font-size: 2rem;
+  text-align: right;
+}
+.card-container {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: right;
+  flex-wrap: wrap;
+}
+
+.project-title {
+  font-family: "geomanistbold";
+  font-size: 1.5rem;
+}
+button {
+  color: var(--off-white);
+  margin-top: 3rem;
+  background: none;
+  padding: 0.75rem 3rem;
+  border-radius: 0;
+  border: 1px solid white;
+  font-size: 1.5rem;
+}
