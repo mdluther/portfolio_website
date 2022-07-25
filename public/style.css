@@ -6,7 +6,9 @@
   --asu-gold: #ffc627;
   --lime-green: #78be30;
   --light-blue: #00a3e0;
-  --orange: #ff7f32;
+  --vhs-orange: hsl(16, 100%, 40%);
+  --vhs-burnt: hsl(16, 100%, 30%);
+  --vhs-toned: hsl(16, 100%, 50%);
   --dark-gray: #1d1d1d;
   --light-gray: #454545;
   --off-white: #ededed;
@@ -29,22 +31,24 @@ html {
 }
 
 h1 {
-  font-size: 4eem;
+  font-size: 3em;
 }
 h2 {
-  font-size: 1.5em;
+  font-size: 2em;
 }
 
 .name-highlight {
   font-family: "geomanistultra";
   font-size: 2em;
-  color: white;
+  color: var(--off-white);
 }
 
 .container {
   display: flex;
-  margin: 1rem;
+  margin: 5rem;
   flex-direction: column;
+  place-content: center;
+  text-align: center;
 }
 
 .card {
@@ -77,12 +81,11 @@ h2 {
   margin-right: 0.5rem;
   font-family: "geomanistultra";
   font-size: 2rem;
-  text-align: right;
 }
 .card-container {
   margin-top: 1.5rem;
   display: flex;
-  justify-content: right;
+  place-content: center;
   flex-wrap: wrap;
 }
 
@@ -90,12 +93,27 @@ h2 {
   font-family: "geomanistbold";
   font-size: 1.5rem;
 }
-button {
+
+.cta {
   color: var(--off-white);
-  margin-top: 3rem;
-  background: none;
+  font-weight: bold;
+  margin: 3rem 0.5rem 3rem 0.5rem;
   padding: 0.75rem 3rem;
   border-radius: 0;
-  border: 1px solid white;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
+}
+
+.see-work {
+  background-color: var(--vhs-orange);
+  border: none;
+}
+
+.say-hello {
+  background: none;
+  border: 1px solid var(--vhs-orange);
+}
+
+.say-hello:hover,
+.see-work:hover {
+  background-color: var(--vhs-toned);
 }
